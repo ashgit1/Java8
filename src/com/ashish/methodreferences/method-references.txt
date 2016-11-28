@@ -1,0 +1,18 @@
+Method References:
+==================
+
+Method references help to point to methods by their names. 
+A method reference is described using :: (double colon) symbol. 
+A method reference can be used to point the following types of methods.
+
+1. Static methods
+2. Instance methods
+3. Constructors using new operator (TreeSet::new)
+
+example : MethodReferences1.java
+
+Note:
+=====
+Here we have passed System.out::println method as a static method reference.
+
+Another Example :  MethodReferences2.java
