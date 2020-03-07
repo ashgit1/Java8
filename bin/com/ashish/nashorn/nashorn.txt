@@ -1,0 +1,57 @@
+Nashorn:
+========
+With Java 8, Nashorn, a much improved javascript engine is introduced, to replace the existing Rhino. 
+Nashorn provides 2 to 10 times better performance, as it directly compiles the code in memory and passes the bytecode to JVM. 
+Nashorn uses invokedynamics feature, introduced in Java 7 to improve performance.
+
+jjs:
+====
+For Nashorn engine, JAVA 8 introduces a new command line tool, jjs, to execute javascript codes at console.
+
+ex: sample.js
+print('Hello World!');
+
+Open console and use the following command:
+
+$ jjs sample.js
+
+It will produce the following output:
+Hello World!
+
+jjs in Interactive Mode:
+========================
+Open the console and use the following command.
+
+$ jjs
+jjs> print("Hello, World!")
+Hello, World!
+jjs> quit()
+>>
+
+Pass Arguments:
+===============
+Open the console and use the following command.
+
+$jjs -- a b c
+jjs> print('letters: ' +arguments.join(", "))
+letters: a, b, c
+jjs> exit();
+
+Calling JavaScript from Java:
+=============================
+Using "ScriptEngineManager"(SEM), JavaScript code can be called and interpreted in Java.
+
+ex: ScriptEngineManagerTest.java
+
+Calling java from Javascript:
+=============================
+
+ex: calculate.js
+
+
+
+
+
+
+
+

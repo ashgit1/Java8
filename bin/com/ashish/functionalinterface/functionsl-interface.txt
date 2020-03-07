@@ -1,0 +1,17 @@
+Functional Interface:
+=====================
+
+Functional interfaces have a single functionality to exhibit. 
+For example, a Comparable interface with a single method ‘compareTo’ is used for comparison purpose
+
+Java 8 has defined a lot of functional interfaces to be used extensively in lambda expressions
+
+Following are few functional interfaces defined in java.util.Function package:
+==============================================================================
+
+Predicate<T>:
+-------------
+Represents a predicate (Boolean-valued function) of one argument.
+
+FunctionalInterfaceTester1.java
+
