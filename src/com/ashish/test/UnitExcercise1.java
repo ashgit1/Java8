@@ -5,6 +5,7 @@ import java.util.List;
 
 public class UnitExcercise1 {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		List<Person> people = Arrays.asList(
