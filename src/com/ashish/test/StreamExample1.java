@@ -13,5 +13,11 @@ public class StreamExample1 {
 		people.stream()
 		.filter(p -> p.getFirstName().startsWith("A"))
 		.forEach(p -> System.out.println(p.getLastName()));
+		
+		// More streams..
+		long count = people.parallelStream()  // Divide the operations if required on multiple cores for faster processing...
+		.filter(p -> p.getFirstName().startsWith("A"))
+		.count();
+		System.out.println(count);
 	}
 }
