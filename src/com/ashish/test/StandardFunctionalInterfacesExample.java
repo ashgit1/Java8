@@ -23,11 +23,11 @@ public class StandardFunctionalInterfacesExample {
 
 		// Step 3: create a method that prints all last names beginning with K
 		System.out.println("Last Name Start with K");
-		printConditionally(people, p -> p.getLastName().startsWith("K"), p -> System.out.println(p));
+		printConditionally(people, p -> p.getLastName().startsWith("K"), p -> System.out.println(p.getLastName()));
 		System.out.println("-------------------------------------------------");
 
 		System.out.println("First Name Start with A");
-		printConditionally(people, p -> p.getFirstName().startsWith("A"), p -> System.out.println(p));
+		printConditionally(people, p -> p.getFirstName().startsWith("A"), p -> System.out.println(p.getFirstName()));
 		System.out.println("-------------------------------------------------");
 
 	}
